@@ -36,7 +36,8 @@ class ViewController: UIViewController,
     // Exercise 1: Move the kart forward past the edge of the screen
     // Tip: Use the `translate` function below
     // YOUR CODE HERE
-    
+      translate(kart: sender.view, by: view.frame.width) // move the kart forward by the width of the containing view
+      
     // Exercise 6: Move the kart back to its original position after you've moved it off the screen
     // Tip: Change your usage of the `translate` function to
     // use the optional completion closure
@@ -60,6 +61,7 @@ class ViewController: UIViewController,
     // Exercise 2: Rotate the kart
     // Tip: Use the `rotate` function below
     // YOUR CODE HERE
+      rotate(kart: sender.view, gestureRecognizer: sender)
   }
   
   private func rotate(kart: UIView?,
@@ -74,6 +76,7 @@ class ViewController: UIViewController,
     // Exercise 3: Change the scale of the kart
     // Tip: Use the `scale` function below
     // YOUR CODE HERE
+      scale(kart: sender.view, gestureRecognizer: sender)
   }
   
   private func scale(kart: UIView?,
@@ -93,6 +96,7 @@ class ViewController: UIViewController,
   // location of the location of the gesture in the view
   private func moveKart(using gestureRecognizer: UIPanGestureRecognizer) {
     // YOUR CODE HERE
+      
   }
   
   @IBAction func didLongPressBackground(_ sender: UILongPressGestureRecognizer) {
